@@ -1,17 +1,20 @@
 .title_hero
 {
-    position: absolute;
+position: absolute;
 width: 475px;
 height: 177px;
 left: 403px;
 transform: translate(50%,-50%);
 
 top: 119px;
-
+font-size: 100px;
 font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
-font-size: 48px;
 line-height: 59px;
 text-align: center;
+}
+
+.titlequote {
+    font-size: 1500px;
 }

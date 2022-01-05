@@ -21,7 +21,13 @@ body{
     padding-left: 15vw;
     padding-right: 15vw;
 }
-
+.placeholder-title-dash{
+    justify-content: center;
+    align-items: left;
+    padding-top: 8rem;
+    height: 100vh;
+    width: 100%;
+}
 .placeholder-title h1{
     font-size: 5vw;
     color: #333;

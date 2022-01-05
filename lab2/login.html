@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.2.0/tailwind.min.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-row">
+            <div class="brand-logo">
+                <a href="#">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <svg viewBox="0 0 12 10" class="hamburger" height="40px" width="40px" style="z-index: 1;">
+                    <path d="M10,2 L2,2" class="bar-1" style="fill: none;stroke: #000;stroke-linecap: round;" />
+                    <path d="M2,5 L10,5" class="bar-2" style="fill: none;stroke: #000;stroke-linecap: round;" />
+                    <path d="M10,8 L2,8" class="bar-3" style="fill: none;stroke: #000;stroke-linecap: round;" />
+                </svg>
+            </button>
+        </div>
+    </header>
+    <section class="fullpage-menu" style="z-index: 1;">
+        <div class="fullpage-menu-inner" style="z-index: 1;">
+            <div class="menu-bg">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Trending</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-nav-footer">
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li>@Discussion Cube</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+    <div class="lg:flex">
+        <div class="lg:w-1/2 xl:max-w-screen-sm">
+            <div class="py-12 bg-indigo-100 lg:bg-white flex justify-center lg:justify-start lg:px-12">
+                <div class="cursor-pointer flex items-center">
+                </div>
+            </div>
+            <div class="mt-10 px-12 sm:px-24 md:px-48 lg:px-12 lg:mt-16 xl:px-24 xl:max-w-2xl">
+                <h2 class="text-center text-4xl text-indigo-900 font-display font-semibold lg:text-left xl:text-5xl
+                    xl:text-bold">Log in</h2>
+                <div class="mt-12">
+                        <div>
+                            <div class="text-sm font-bold text-gray-700 tracking-wide">Email Address</div>
+                            <input
+                                class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500"
+                                type="" placeholder="mike@gmail.com">
+                        </div>
+                        <div class="mt-8">
+                            <div class="flex justify-between items-center">
+                                <div class="text-sm font-bold text-gray-700 tracking-wide">
+                                    Password
+                                </div>
+                                <div>
+                                    <a class="text-xs font-display font-semibold text-indigo-600 hover:text-indigo-800
+                                        cursor-pointer">
+                                        Forgot Password?
+                                    </a>
+                                </div>
+                            </div>
+                            <input
+                                class="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500"
+                                type="" placeholder="Enter your password">
+                        </div>
+                        <div class="mt-10">
+                            <a href="dashboard.html"><button class="bg-indigo-500 text-gray-100 p-4 w-full rounded-full tracking-wide
+                                font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-indigo-600
+                                shadow-lg">
+                                Log In
+                            </button></a>
+                        </div>
+                    <div class="mt-12 text-sm font-display font-semibold text-gray-700 text-center">
+                        Don't have an account ? <a class="cursor-pointer text-indigo-600 hover:text-indigo-800">Sign
+                            up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden lg:flex items-center justify-center bg-indigo-100 flex-1 h-screen">
+            <div class="max-w-xs transform duration-200 hover:scale-110 cursor-pointer" style="z-index: 0;">
+
+
+                <img src="assets/img/login.jpg" alt=""
+                    style="display:block; width:100%; height:100%; object-fit: cover;">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+    <script src="main.js"></script>
+    <script>
+        // selector for menu click
+        var menuToggle = document.getElementById("menuToggle");
+
+
+        // Hamburger animation
+        var menuBar = gsap.timeline({ paused: true });
+
+        menuBar.to('.bar-1', 0.5, { attr: { d: "M8,2 L2,8" }, x: 1, ease: Power2.easeInOut }, 'start')
+        menuBar.to('.bar-2', 0.5, { autoAlpha: 0 }, 'start')
+        menuBar.to('.bar-3', 0.5, { attr: { d: "M8,8 L2,2" }, x: 1, ease: Power2.easeInOut }, 'start');
+
+        menuBar.reverse();
+
+
+        // Nav Animation
+        var tl = gsap.timeline({ paused: true });
+        tl.to(".fullpage-menu", {
+            duration: 0,
+            display: "block",
+            ease: 'Expo.easeInOut',
+        });
+
+        tl.from(".menu-bg span", {
+            duration: 1,
+            x: "100%",
+            stagger: 0.1,
+            ease: 'Expo.easeInOut',
+        });
+
+        tl.from(".main-menu li a", {
+            duration: 1.5,
+            y: "100%",
+            stagger: 0.2,
+            ease: 'Expo.easeInOut',
+        }, "-=0.5");
+
+        tl.from(".social-links li", {
+            duration: 1,
+            y: "-100%",
+            opacity: 0,
+            stagger: 0.1,
+            ease: 'Expo.easeInOut',
+        }, "-=0.5");
+        tl.reverse();
+
+
+
+        menuToggle.addEventListener('click', function () {
+            menuBar.reversed(!menuBar.reversed());
+            tl.reversed(!tl.reversed());
+        });
+
+    </script>
+</body>
+
+</html>

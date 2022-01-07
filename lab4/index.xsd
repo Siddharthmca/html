@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Discussion-Cube">
+<xs:complexType>
+<xs:sequence>
+
+<xs:element name="Users" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+	<xs:element name="uid" type="xs:integer"></xs:element>
+	<xs:element name="name" type="xs:string"></xs:element>
+	<xs:element name="dsgn" type="xs:string"></xs:element>
+	<xs:element name="age" type="xs:integer"></xs:element>
+	<!--  <xs:element name="Salary" type="MySal"></xs:element> -->
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Rooms" maxOccurs="unbounded">
+<xs:complexType>
+	<xs:sequence>
+		<xs:element name="rid" type="xs:integer"></xs:element>
+		<xs:element name="rtitle" type="xs:string"></xs:element>
+		<xs:element name="rdesc" type="xs:integer"></xs:element>
+		<xs:element name="rmode" type="xs:integer"></xs:element>
+	</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="RoomStatus" maxOccurs="unbounded">
+<xs:complexType>
+	<xs:sequence>
+		<xs:element name="rs.id" type="xs:decimal"></xs:element>
+		<xs:element name="rid" type="xs:integer"></xs:element>
+		<xs:element name="rActive" type="xs:string"></xs:element>
+	</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Replies" maxOccurs="unbounded">
+<xs:complexType>
+	<xs:sequence>
+		<xs:element name="rid" type="xs:integer"></xs:element>
+		<xs:element name="pname" type="xs:string"></xs:element>
+	</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Hashtags" maxOccurs="unbounded">
+<xs:complexType>
+	<xs:sequence>
+		<xs:element name="hid" type="xs:integer"></xs:element>
+		<xs:element name="htext" type="xs:string"></xs:element>
+	</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="Categories" maxOccurs="unbounded">
+<xs:complexType>
+	<xs:sequence>
+		<xs:element name="cid" type="xs:integer"></xs:element>
+		<xs:element name="ctext" type="xs:string"></xs:element>
+	</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+</xs:schema>

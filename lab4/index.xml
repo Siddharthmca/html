@@ -4,151 +4,152 @@
 xsi:noNamespaceSchemaLocation="emp.xsd">
   <Users>
   	<uid>101</uid>
-    <name>Johns Baby</name>
+    <name>Joseph K Iype</name>
     <dsgn>Advocate</dsgn>
-    <age>29</age>
-  </Users>
-  <Users>
-  	<uid>102</uid>
-    <name>Andrew Garren</name>
-    <dsgn>Student</dsgn>
     <age>22</age>
   </Users>
   <Users>
+  	<uid>102</uid>
+    <name>Jane Gabbon</name>
+    <dsgn>Student</dsgn>
+    <age>25</age>
+  </Users>
+  <Users>
   	<uid>103</uid>
-    <name>Jerin Jacob</name>
+    <name>Jacob Kurian</name>
     <dsgn>Advocate</dsgn>
-    <age>33</age>
+    <age>45</age>
   </Users>
   <Users>
   	<uid>104</uid>
-    <name>Steven Joseph</name>
+    <name>Steven Reign</name>
     <dsgn>Advocate</dsgn>
-    <age>35</age>
+    <age>55</age>
   </Users>
   <Users>
   	<uid>105</uid>
-    <name>Tobey Marshell</name>
+    <name>Andrew Hardy</name>
     <dsgn>Advocate</dsgn>
-    <age>34</age>
+    <age>88</age>
   </Users>
  <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> 
   <Rooms>
   	<rid>1</rid>
-  	<rtitle>This is the first Question.?</rtitle>
-  	<rdesc>89</rdesc>
-  	<rmode>23</rmode>
+  	<rtitle>LET’S SIMPLIFY LEGAL JARGON</rtitle>
+  	<rdesc>As many of us often find ourselves wishing throughout the day, Alan Siegel explicitly argues the importance of replacing the thick legal jargon our industry has grown accustomed to with plain English. Siegel, an expert on branding and business communication, argues that plain English legal documents would benefit government, businesses, and private citizens. In under five minutes, he makes a significantly compelling case for a simple, sensible redesign.</rdesc>
+  	<rmode>Video</rmode>
   </Rooms>
   
    <Rooms>
   	<rid>2</rid>
-  	<rtitle>This is the second Question.?</rtitle>
-  	<rdesc>118</rdesc>
-  	<rmode>33</rmode>
+  	<rtitle>HOW I DEFEND THE RULE OF LAW</rtitle>
+  	<rdesc>This talk is just as impressive as the credentials of its presenter. American lawyer Kimberley Motley is the only Western litigator in Afghanistan’s courts. In her 15-minute talk, she uses three of her own cases as examples to argue that every human deserves protection under the laws of their country. At the end of the talk, Motley emphatically asks her audience to take action and embrace their potential to develop the rule of law globally.
+
+</rdesc>
+  	<rmode>Audio</rmode>
   </Rooms>
   
    <Rooms>
   	<rid>3</rid>
-  	<rtitle>This is the third Question.?</rtitle>
-  	<rdesc>41</rdesc>
-  	<rmode>0</rmode>
+  	<rtitle>WHY EYEWITNESSES GET IT WRONG</rtitle>
+  	<rdesc>Although Scott Fraser isn’t in litigation himself, his talk is a must for anyone who deals with eyewitness testimony. Fraser is a forensic psychologist who also thinks deeply about the fallibility of human memory and encourages a more scientific approach to trial evidence. The talk centers around a deadly shooting at sunset and explains how the brain is able to create “memories” of things it could never have seen.
+
+</rdesc>
+  	<rmode>Video</rmode>
   </Rooms>
   
    <Rooms>
   	<rid>4</rid>
-  	<rtitle>This is the fourth Question.?</rtitle>
-  	<rdesc>11</rdesc>
-  	<rmode>27</rmode>
+  	<rtitle>THE HAPPY SECRET TO BETTER WORK</rtitle>
+  	<rdesc>Like Fraser, Shawn Achor is a psychologist. This uplifting presentation centers around positive psychology. It argues that happiness can be one of the most important factors in workplace productivity. Achor makes some very interesting points in this fast-paced presentation, and it’s well worth the 12 minutes to watch!
+
+</rdesc>
+  	<rmode>Audio</rmode>
   </Rooms>
   
    <Rooms>
   	<rid>5</rid>
-  	<rtitle>This is the fifth Question.?</rtitle>
-  	<rdesc>53</rdesc>
-  	<rmode>97</rmode>
+  	<rtitle>DARE TO DISAGREE</rtitle>
+  	<rdesc>Margaret Heffernan is the former CEO of five businesses, and she’s also very familiar with the avoidance of conflict. Her TED Talk explores all-too-human thought patterns—like conflict avoidance and selective blindness—that lead organizations and managers astray. In under 13 minutes, Heffernan makes the case for good disagreement. She will show you how small conflicts prevent echo chambers that hinder progress.
+
+</rdesc>
+  	<rmode>Video</rmode>
   </Rooms>
   
   <Rooms>
   	<rid>6</rid>
-  	<rtitle>This is the sixth Question.?</rtitle>
-  	<rdesc>39</rdesc>
-  	<rmode>6</rmode>
+  	<rtitle>THE RIGHT TO UNDERSTAND</rtitle>
+  	<rdesc>Our final talk is similar to the first, but it takes a different perspective. From her viewpoint as a translator, Sandra Fisher-Martins fights “information apartheid”—the barrier created by overly complex language. Medical, legal, and financial documents should be easy to read, but too often they aren’t. Through the use of humorous and illustrative examples, Fisher-Martins shows how overly complex language often separates us from the information we need.
+
+</rdesc>
+  	<rmode>Audio</rmode>
   </Rooms>
   
-  <Rooms>
-  	<rid>7</rid>
-  	<rtitle>This is the seventh Question.?</rtitle>
-  	<rdesc>70</rdesc>
-  	<rmode>17</rmode>
-  </Rooms>
+ 
  
   <RoomStatus>
   	<rs.id>1.1</rs.id>
   	<rid>1</rid>
-  	<rActive>This is the 1st answer to the First Question.</rActive>
-  	<rInActive>56</rInActive>
+  	<rActive>Active</rActive>
   </RoomStatus>
   
   <RoomStatus>
   	<rs.id>1.2</rs.id>
   	<rid>1</rid>
-  	<rActive>This is the 2nd answer to the First Question.</rActive>
-  	<rInActive>132</rInActive>
+  	<rActive>Inactive</rActive>
   </RoomStatus>
   
   <RoomStatus>
   	<rs.id>2.1</rs.id>
   	<rid>2</rid>
-  	<rActive>This is the 1st answer to the Second Question</rActive>
-  	<rInActive>56</rInActive>
+  	<rActive>Active</rActive>
   </RoomStatus>
   
   <RoomStatus>
   	<rs.id>2.2</rs.id>
   	<rid>2</rid>
-  	<rActive>This is the 2nd answer to the Second Question</rActive>
-  	<rInActive>132</rInActive>
+  	<rActive>Inctive</rActive>
   </RoomStatus>
 
 
   <Participant>
   	<rid>1</rid>
-  	<pname>This is the 1st Reply</pname>
+  	<pname>Jane</pname>
   </Participant>
   
   <Participant>
   	<rid>2</rid>
-  	<pname>This is the 2nd Reply</pname>
+  	<pname>John</pname>
   </Participant>
   
   <Participant>
   	<rid>3</rid>
-  	<pname>This is the 3rd Reply</pname>
+  	<pname>Kevin</pname>
   </Participant>
   
   <Participant>
   	<rid>4</rid>
-  	<pname>This is the 4th Reply</pname>
+  	<pname>Dan</pname>
   </Participant>
   
   <Participant>
   	<rid>5</rid>
-  	<pname>This is the 5th Reply</pname>
+  	<pname>Don</pname>
   </Participant>
   
   <Participant>
   	<rid>6</rid>
-  	<pname>This is the 6th Reply</pname>
+  	<pname>Gan</pname>
   </Participant>
    
   <Participant>
   	<rid>7</rid>
-  	<pname>This is the 7th Reply</pname>
+  	<pname>Cheol</pname>
   </Participant>
    
   <Participant>
   	<rid>8</rid>
-  	<pname>This is the 8th Reply</pname>
+  	<pname>Tan</pname>
   </Participant>
  
  
@@ -187,7 +188,6 @@ xsi:noNamespaceSchemaLocation="emp.xsd">
   	<htext>#beautyandpride</htext>
   </Hashtags>
   
- <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> 
   <Categories>
   	<cid>1</cid>
   	<ctext>Crime</ctext>

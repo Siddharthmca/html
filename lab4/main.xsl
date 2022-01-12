@@ -91,7 +91,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 		<th>Participant ID</th>
 		<th>Participant Name</th>
 		</tr>
-		<xsl:for-each select="Discussion-Cube/Replies">
+		<xsl:for-each select="Discussion-Cube/Participant">
 		<tr bgcolor="red">
 			<td align="center">
 				<xsl:value-of select="rid"></xsl:value-of>

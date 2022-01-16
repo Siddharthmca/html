@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="main.xsl"?>
+<Discussion-Cube xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="index.xsd">
+  <Users>
+  	<uid>101</uid>
+    <name>Joseph K Iype</name>
+    <dsgn>Advocate</dsgn>
+    <age>22</age>
+  </Users>
+  <Users>
+  	<uid>102</uid>
+    <name>Jane Gabbon</name>
+    <dsgn>Student</dsgn>
+    <age>25</age>
+  </Users>
+  <Users>
+  	<uid>103</uid>
+    <name>Jacob Kurian</name>
+    <dsgn>Advocate</dsgn>
+    <age>45</age>
+  </Users>
+  <Users>
+  	<uid>104</uid>
+    <name>Steven Reign</name>
+    <dsgn>Advocate</dsgn>
+    <age>55</age>
+  </Users>
+  <Users>
+  	<uid>105</uid>
+    <name>Andrew Hardy</name>
+    <dsgn>Advocate</dsgn>
+    <age>88</age>
+  </Users>
+ <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->  <!--  --> <!--  --> 
+  <Rooms>
+  	<rid>1</rid>
+  	<rtitle>LET’S SIMPLIFY LEGAL JARGON</rtitle>
+  	<rdesc>As many of us often find ourselves wishing throughout the day, Alan Siegel explicitly argues the importance of replacing the thick legal jargon our industry has grown accustomed to with plain English. Siegel, an expert on branding and business communication, argues that plain English legal documents would benefit government, businesses, and private citizens. In under five minutes, he makes a significantly compelling case for a simple, sensible redesign.</rdesc>
+  	<rmode>Video</rmode>
+  </Rooms>
+  
+   <Rooms>
+  	<rid>2</rid>
+  	<rtitle>HOW I DEFEND THE RULE OF LAW</rtitle>
+  	<rdesc>This talk is just as impressive as the credentials of its presenter. American lawyer Kimberley Motley is the only Western litigator in Afghanistan’s courts. In her 15-minute talk, she uses three of her own cases as examples to argue that every human deserves protection under the laws of their country. At the end of the talk, Motley emphatically asks her audience to take action and embrace their potential to develop the rule of law globally.
+
+</rdesc>
+  	<rmode>Audio</rmode>
+  </Rooms>
+  
+   <Rooms>
+  	<rid>3</rid>
+  	<rtitle>WHY EYEWITNESSES GET IT WRONG</rtitle>
+  	<rdesc>Although Scott Fraser isn’t in litigation himself, his talk is a must for anyone who deals with eyewitness testimony. Fraser is a forensic psychologist who also thinks deeply about the fallibility of human memory and encourages a more scientific approach to trial evidence. The talk centers around a deadly shooting at sunset and explains how the brain is able to create “memories” of things it could never have seen.
+
+</rdesc>
+  	<rmode>Video</rmode>
+  </Rooms>
+  
+   <Rooms>
+  	<rid>4</rid>
+  	<rtitle>THE HAPPY SECRET TO BETTER WORK</rtitle>
+  	<rdesc>Like Fraser, Shawn Achor is a psychologist. This uplifting presentation centers around positive psychology. It argues that happiness can be one of the most important factors in workplace productivity. Achor makes some very interesting points in this fast-paced presentation, and it’s well worth the 12 minutes to watch!
+
+</rdesc>
+  	<rmode>Audio</rmode>
+  </Rooms>
+  
+   <Rooms>
+  	<rid>5</rid>
+  	<rtitle>DARE TO DISAGREE</rtitle>
+  	<rdesc>Margaret Heffernan is the former CEO of five businesses, and she’s also very familiar with the avoidance of conflict. Her TED Talk explores all-too-human thought patterns—like conflict avoidance and selective blindness—that lead organizations and managers astray. In under 13 minutes, Heffernan makes the case for good disagreement. She will show you how small conflicts prevent echo chambers that hinder progress.
+
+</rdesc>
+  	<rmode>Video</rmode>
+  </Rooms>
+  
+  <Rooms>
+  	<rid>6</rid>
+  	<rtitle>THE RIGHT TO UNDERSTAND</rtitle>
+  	<rdesc>Our final talk is similar to the first, but it takes a different perspective. From her viewpoint as a translator, Sandra Fisher-Martins fights “information apartheid”—the barrier created by overly complex language. Medical, legal, and financial documents should be easy to read, but too often they aren’t. Through the use of humorous and illustrative examples, Fisher-Martins shows how overly complex language often separates us from the information we need.
+
+</rdesc>
+  	<rmode>Audio</rmode>
+  </Rooms>
+  
+ 
+ 
+  <RoomStatus>
+  	<rs.id>1.1</rs.id>
+  	<rid>1</rid>
+  	<rActive>Active</rActive>
+  </RoomStatus>
+  
+  <RoomStatus>
+  	<rs.id>1.2</rs.id>
+  	<rid>1</rid>
+  	<rActive>Inactive</rActive>
+  </RoomStatus>
+  
+  <RoomStatus>
+  	<rs.id>2.1</rs.id>
+  	<rid>2</rid>
+  	<rActive>Active</rActive>
+  </RoomStatus>
+  
+  <RoomStatus>
+  	<rs.id>2.2</rs.id>
+  	<rid>2</rid>
+  	<rActive>Inctive</rActive>
+  </RoomStatus>
+
+
+  <Participant>
+  	<rid>1</rid>
+  	<pname>Jane</pname>
+  </Participant>
+  
+  <Participant>
+  	<rid>2</rid>
+  	<pname>John</pname>
+  </Participant>
+  
+  <Participant>
+  	<rid>3</rid>
+  	<pname>Kevin</pname>
+  </Participant>
+  
+  <Participant>
+  	<rid>4</rid>
+  	<pname>Dan</pname>
+  </Participant>
+  
+  <Participant>
+  	<rid>5</rid>
+  	<pname>Don</pname>
+  </Participant>
+  
+  <Participant>
+  	<rid>6</rid>
+  	<pname>Gan</pname>
+  </Participant>
+   
+  <Participant>
+  	<rid>7</rid>
+  	<pname>Cheol</pname>
+  </Participant>
+   
+  <Participant>
+  	<rid>8</rid>
+  	<pname>Tan</pname>
+  </Participant>
+ 
+ 
+  <Hashtags>
+  	<hid>1</hid>
+  	<htext>#blacklivesmatter</htext>
+  </Hashtags>
+  
+  <Hashtags>
+  	<hid>2</hid>
+  	<htext>#youarenotalone</htext>
+  </Hashtags>
+  
+  <Hashtags>
+  	<hid>3</hid>
+  	<htext>#Saveourlaws</htext>
+  </Hashtags>
+  
+  <Hashtags>
+  	<hid>4</hid>
+  	<htext>#boycottexams</htext>
+  </Hashtags>
+  
+  <Hashtags>
+  	<hid>5</hid>
+  	<htext>#cancelmguexams</htext>
+  </Hashtags>
+  
+  <Hashtags>
+  	<hid>6</hid>
+  	<htext>#beautyandpride</htext>
+  </Hashtags>
+  
+   <Hashtags>
+  	<hid>7</hid>
+  	<htext>#beautyandpride</htext>
+  </Hashtags>
+  
+  <Categories>
+  	<cid>1</cid>
+  	<ctext>Crime</ctext>
+  </Categories>
+  
+ <Categories>
+  	<cid>2</cid>
+  	<ctext>Civil</ctext>
+  </Categories>
+  
+  <Categories>
+  	<cid>3</cid>
+  	<ctext>Family</ctext>
+  </Categories>
+  
+  <Categories>
+  	<cid>4</cid>
+  	<ctext>Law</ctext>
+  </Categories>
+</Discussion-Cube>

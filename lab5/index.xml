@@ -3,13 +3,7 @@
 <modules>
   <modulename>DISCUSSION CUBE</modulename>
   <title>USER DETAILS</title>
-   <!-- <vehicle id="1" brand="ROLLS ROYCE" vehicleno="123KA" des="Classy Car" servicetype="MODIFY" status="1"/>
-  <vehicle id="2" brand="MARUTHI SUZUKU" vehicleno="213KA" des="VINATAGE CAR" servicetype="UPGRADE" status="0"/>
-     <vehicle id="3" brand="LAMBORGINI" vehicleno="9900TN" des="SUPER CAR" servicetype="UPGRADE" status="0"/>
-     <vehicle id="4" brand="SKODA" vehicleno="876KA" des="CLAASIC" servicetype="MODIFY" status="1"/>
-     <vehicle id="5" brand="BMW BIKE" vehicleno="213KA" des="SUPER BIKE" servicetype="UPGRADE" status="0"/>
-     <vehicle id="6" brand="TRACTOR" vehicleno="21LA" des="AGRICULTURE EQUIPEMENT" servicetype="UPGRADE" status="1"/>
-      -->
+ 
 <m>
    <LAWYER>
         <id>1</id>

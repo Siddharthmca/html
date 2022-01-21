@@ -22,8 +22,8 @@
     </LAWYER>
     <LAWYER>
         <id>3</id>
-        <name>RAVI</name>
-        <address>COIMBATORE ,TAMILNADU</address>
+        <name>JOHNS</name>
+        <address>PALA ,KERALA</address>
         <phone>8884719624</phone>
         <type>USER</type>
         <usetype>LAWYER</usetype>
@@ -31,7 +31,7 @@
     </LAWYER>
     <LAWYER>
         <id>2</id>
-        <name>RAM</name>
+        <name>NIDHI</name>
         <address>CHENNAI ,TAMILNADU</address>
         <phone>990080993</phone>
         <type>USER</type>
@@ -40,8 +40,8 @@
     </LAWYER>
     <LAWYER>
         <id>4</id>
-        <name>RAJU</name>
-        <address>HYDERBAD ,TELANGANA</address>
+        <name>NIMMI</name>
+        <address>BANGALORE ,KARNATAKA</address>
         <phone>9646563434</phone>
         <type>USER</type>
         <usetype>LAWYER</usetype>
@@ -49,8 +49,8 @@
     </LAWYER>
     <LAWYER>
         <id>5</id>
-        <name>ravi</name>
-        <address>HYDERBAD ,TELANGANA</address>
+        <name>ANISHA</name>
+        <address>RANCHI ,JHARKHAND</address>
         <phone>9646563434</phone>
         <type>USER</type>
         <usetype>LAWYER</usetype>

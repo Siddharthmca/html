@@ -77,6 +77,10 @@ function test_str() {
 
 }
 
+
+function reset() {
+    document.getElementById("feedback-form").reset();
+  }
 // function username_str() {
 //     var res;
 //     var str = 

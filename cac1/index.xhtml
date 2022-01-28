@@ -40,8 +40,7 @@
                         </div>
                         <form name="form1" action="feedback.xhtml">
                             <div class="mb-6">
-                                <input type="text" placeholder="Email"
-                                    class="
+                                <input type="text" placeholder="Email" class="
                         w-full
                         rounded-md
                         border
@@ -54,7 +53,7 @@
                         outline-none
                         focus-visible:shadow-none
                         focus:border-primary
-                        "  id = "t3"  />
+                        " id="t3" onkeypress="return IsAlpha(event);"/>
                             </div>
                             <div class="mb-6">
                                 <input type="password" placeholder="Password" class="
@@ -70,14 +69,13 @@
                         outline-none
                         focus-visible:shadow-none
                         focus:border-primary
-                        "  
-                        id="t1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" name="text1"  />
-                                    
+                        " id="t1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                    name="text1" />
+
                             </div>
                             <div class="mb-10">
-                                <input type="submit" name="Validate" onclick="test_str()"
-                                    value="Log In" class="
+                                <input type="submit" name="Validate" onclick="test_str()" value="Log In" class="
                         w-full
                         rounded-md
                         border

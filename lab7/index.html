@@ -60,8 +60,8 @@ function addCookie()
     var loc = document.getElementById("location").value
     if((name.trim() != "")  && (loc.trim() != ""))
     {
-        document.cookie = "name=" + name + ";expires=Sun, 30 Jan 2022 00:00:00 UTC;"
-        document.cookie = "location=" + loc + ";expires=Sun, 30 Jan 2022 00:00:00 UTC;"
+        document.cookie = "name=" + name + ", expires=Sun, 30 Jan 2022 00:00:00 UTC,";
+        document.cookie = "location=" + loc + ", expires=Sun, 30 Jan 2022 00:00:00 UTC,";
         localStorage.setItem('name', name)
         localStorage.setItem('location', loc)
         sessionStorage.setItem('name', name)

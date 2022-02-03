@@ -1,12 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="mainApp">
+
 <head>
     <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <title>JSON parse</title>
 </head>
-<body>
-    
+
+<body ng-controller="UserController">
+    <section class="bg-white py-20 lg:py-[120px]">
+        <div class="container">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full px-4">
+                    <div class="max-w-full overflow-x-auto">
+                         <input type="text"
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-black-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="username" type="text" placeholder="Enter ID to search" ng-model="limit" />
+                            <br>
+                        <table class="table-auto w-full">
+                            <thead>
+                                <tr class="bg-primary text-center">
+                                    <th class="
+                w-1/6
+                min-w-[160px]
+                text-lg
+                font-semibold
+                text-white
+                py-4
+                lg:py-7
+                px-3
+                lg:px-4
+                border-l border-transparent
+                ">Id</th>
+                                    <th class="
+                w-1/6
+                min-w-[160px]
+                text-lg
+                font-semibold
+                text-white
+                py-4
+                lg:py-7
+                px-3
+                lg:px-4
+                border-l border-transparent
+                ">First</th>
+                                    <th class="
+                w-1/6
+                min-w-[160px]
+                text-lg
+                font-semibold
+                text-white
+                py-4
+                lg:py-7
+                px-3
+                lg:px-4
+                border-l border-transparent
+                ">Last</th>
+                                    <th class="
+                w-1/6
+                min-w-[160px]
+                text-lg
+                font-semibold
+                text-white
+                py-4
+                lg:py-7
+                px-3
+                lg:px-4
+                border-l border-transparent
+                ">Email</th>
+                                    <th class="
+                w-1/6
+                min-w-[160px]
+                text-lg
+                font-semibold
+                text-white
+                py-4
+                lg:py-7
+                px-3
+                lg:px-4
+                border-l border-transparent
+                ">Gender</th>
+                                    <th class="
+                w-1/6
+                min-w-[160px]
+                text-lg
+                font-semibold
+                text-white
+                py-4
+                lg:py-7
+                px-3
+                lg:px-4
+                border-l border-transparent
+                ">IP Address</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in users | myFilter:limit">
+                                    <td class="
+                                text-center text-dark
+                                font-medium
+                                text-base
+                                py-5
+                                px-2
+                                bg-[#F3F6FF]
+                                border-b border-l border-[#E8E8E8]
+                                ">{{item.id | number}}</td>
+
+                                    <td class="
+                                text-center text-dark
+                                font-medium
+                                text-base
+                                py-5
+                                px-2
+                                bg-white
+                                border-b border-[#E8E8E8]
+                                ">{{item.first_name | uppercase}}</td>
+                                    <td class="
+                                text-center text-dark
+                                font-medium
+                                text-base
+                                py-5
+                                px-2
+                                bg-[#F3F6FF]
+                                border-b border-l border-[#E8E8E8]
+                                ">{{item.last_name | uppercase}}</td>
+                                    <td class="
+                                text-center text-dark
+                                font-medium
+                                text-base
+                                py-5
+                                px-2
+                                bg-white
+                                border-b border-[#E8E8E8]
+                                ">{{item.email | lowercase}}</td>
+                                    <td class="
+                                text-center text-dark
+                                font-medium
+                                text-base
+                                py-5
+                                px-2
+                                bg-[#F3F6FF]
+                                border-b border-l border-[#E8E8E8]
+                                ">{{item.gender | uppercase : 12}}</td>
+                                    <td class="
+                                text-center text-dark
+                                font-medium
+                                text-base
+                                py-5
+                                px-2
+                                bg-white
+                                border-b border-[#E8E8E8]
+                                ">{{item.ip_address}}</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div data-pagination="" data-num-pages="numOfPages()" data-current-page="curPage"
+                            data-max-size="maxSize" data-boundary-links="true">
+                        </div>
+                    </div>
+
+                    <script src="main.js"></script>
 </body>
+
 </html>

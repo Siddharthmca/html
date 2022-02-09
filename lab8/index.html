@@ -1,173 +1,81 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="mainApp">
+<html ng-app="sample">
 
 <head>
     <meta charset="UTF-8">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular JS</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-
-    <title>JSON parse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- <script src="angular.min.js"></script> -->
+    <script src="main.js"></script>
 </head>
 
-<body ng-controller="UserController">
-    <section class="bg-white py-20 lg:py-[120px]">
-        <div class="container">
-            <div class="flex flex-wrap -mx-4">
-                <div class="w-full px-4">
-                    <div class="max-w-full overflow-x-auto">
-                         <input type="text"
-                            class="shadow appearance-none border rounded w-full py-2 px-3 text-black-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="username" type="text" placeholder="Enter ID to search" ng-model="limit" />
-                            <br>
-                        <table class="table-auto w-full">
-                            <thead>
-                                <tr class="bg-primary text-center">
-                                    <th class="
-                w-1/6
-                min-w-[160px]
-                text-lg
-                font-semibold
-                text-white
-                py-4
-                lg:py-7
-                px-3
-                lg:px-4
-                border-l border-transparent
-                ">Id</th>
-                                    <th class="
-                w-1/6
-                min-w-[160px]
-                text-lg
-                font-semibold
-                text-white
-                py-4
-                lg:py-7
-                px-3
-                lg:px-4
-                border-l border-transparent
-                ">First</th>
-                                    <th class="
-                w-1/6
-                min-w-[160px]
-                text-lg
-                font-semibold
-                text-white
-                py-4
-                lg:py-7
-                px-3
-                lg:px-4
-                border-l border-transparent
-                ">Last</th>
-                                    <th class="
-                w-1/6
-                min-w-[160px]
-                text-lg
-                font-semibold
-                text-white
-                py-4
-                lg:py-7
-                px-3
-                lg:px-4
-                border-l border-transparent
-                ">Email</th>
-                                    <th class="
-                w-1/6
-                min-w-[160px]
-                text-lg
-                font-semibold
-                text-white
-                py-4
-                lg:py-7
-                px-3
-                lg:px-4
-                border-l border-transparent
-                ">Gender</th>
-                                    <th class="
-                w-1/6
-                min-w-[160px]
-                text-lg
-                font-semibold
-                text-white
-                py-4
-                lg:py-7
-                px-3
-                lg:px-4
-                border-l border-transparent
-                ">IP Address</th>
+<body ng-controller="myctrl" >
+    <div class="container-fluid col-12">
+    <div class = "row">
+        
+            <div class="col-12" style="color: rgb(0, 0, 0);  border-radius: 30px;">
+                <h2>Rows to Display: <input class="form-control" type="number" step="1" min="0" max="16" ng-model="rowlimit" />
+                    Search: <input  class="form-control" type="text" placeholder="Global Search" ng-model="search">
+                    Filter Salary: <input class="form-control" type="text" placeholder="Salary filter in rupees" ng-model="salfil"></h2>
 
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr ng-repeat="item in users | myFilter:limit">
-                                    <td class="
-                                text-center text-dark
-                                font-medium
-                                text-base
-                                py-5
-                                px-2
-                                bg-[#F3F6FF]
-                                border-b border-l border-[#E8E8E8]
-                                ">{{item.id | number}}</td>
-
-                                    <td class="
-                                text-center text-dark
-                                font-medium
-                                text-base
-                                py-5
-                                px-2
-                                bg-white
-                                border-b border-[#E8E8E8]
-                                ">{{item.first_name | uppercase}}</td>
-                                    <td class="
-                                text-center text-dark
-                                font-medium
-                                text-base
-                                py-5
-                                px-2
-                                bg-[#F3F6FF]
-                                border-b border-l border-[#E8E8E8]
-                                ">{{item.last_name | uppercase}}</td>
-                                    <td class="
-                                text-center text-dark
-                                font-medium
-                                text-base
-                                py-5
-                                px-2
-                                bg-white
-                                border-b border-[#E8E8E8]
-                                ">{{item.email | lowercase}}</td>
-                                    <td class="
-                                text-center text-dark
-                                font-medium
-                                text-base
-                                py-5
-                                px-2
-                                bg-[#F3F6FF]
-                                border-b border-l border-[#E8E8E8]
-                                ">{{item.gender | uppercase : 12}}</td>
-                                    <td class="
-                                text-center text-dark
-                                font-medium
-                                text-base
-                                py-5
-                                px-2
-                                bg-white
-                                border-b border-[#E8E8E8]
-                                ">{{item.ip_address}}</td>
-
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div data-pagination="" data-num-pages="numOfPages()" data-current-page="curPage"
-                            data-max-size="maxSize" data-boundary-links="true">
-                        </div>
-                    </div>
-
-                    <script src="main.js"></script>
+            </div>
+            <center>
+            <table 
+            class="table">
+                <tr>
+                    <th cellspacing="1" scope = "col">ID
+                        <br>
+                        <input class="form-control" type="text" ng-model="search.ID" placeholder="Search Id...">
+                    </th>
+                    <th scope = "col">Name
+                        <br>
+                        <input  class="form-control" type="text" ng-model="search.Name" placeholder="Search Name...">
+                    </th>
+                    <th scope = "col">Designation
+                        <br>
+                        <input class="form-control" type="text" ng-model="search.Designation" placeholder="Search Designation...">
+                    </th>
+                    <th scope = "col">Total Posts
+                        <br>
+                        <input class="form-control" type="text" ng-model="search.Totalposts" placeholder="No. of Posts...">
+                    </th>
+                    <th scope = "col">Address
+                        <br>
+                        <input class="form-control" type="text" ng-model="search.Address" placeholder="Search Address...">
+                    </th>
+                    <th scope = "col">Phone
+                        <br>
+                        <input class="form-control" type="text" ng-model="search.Phone" placeholder="Search Phone number...">
+                    </th>
+                    <th scope = "col">Salary In Dollars
+                        <br>
+                        <input class="form-control" type="text" ng-model="search.Salary" placeholder="Search Salary...">
+                    </th>
+                    <th scope = "col">Salary In Rupees
+                        <br>
+                        <input class="form-control" type="text" ng-model="search.Salary" placeholder="Search Salary...">
+                    </th>
+                </tr>
+                <tr ng-repeat="item in entry|filter:search|orderBy:'ID'|limitTo:rowlimit |salaryGreaterThan:salfil"
+                    style="color: rgb(0, 0, 0) ; background-color:rgb(255, 255, 255); text-align: center;">
+                    <td scope="row">{{item.ID}}</td>
+                    <td class="table-dark">{{item.Name|uppercase}}</td>
+                    <td>{{item.Designation|toUpperCase}}</td>
+                    <td class="table-dark">{{item.Totalposts}}</td>
+                    <td>{{item.Address|lowercase}}</td>
+                    <td class="table-dark">{{item.Phone}}</td>
+                    <td>{{item.Salary|americanConvertion |currency}}</td>
+                    <td class="table-dark">Rs. {{item.Salary}}</td>
+                </tr>
+            </table>
+        </center>
+    </div>
+</div>
 </body>
 
 </html>

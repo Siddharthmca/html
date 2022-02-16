@@ -1,5 +1,6 @@
+'use strict';
 
-const request = require('request');
+const https = require('https');
 
 const fs = require('fs');
 const express = require('express');
@@ -119,18 +120,24 @@ console.log(mechanic);
 
 let url = 'https://github.com/Joseph-k-iype/html/blob/master/lab10/myapp/database.json';
 
-let options = {json: true};
+var managers = https.get(url,(res) => {
+    let body = "";
 
+    res.on("data", (chunk) => {
+        body += chunk;
+    });
 
+    res.on("end", () => {
+        try {
+            let json = JSON.parse(body);
+            // do something with JSON
+        } catch (error) {
+            console.error(error.message);
+        };
+    });
 
-var managers = request(url, options, (error, res, body) => {
-    if (error) {
-        return  console.log(error)
-    };
-
-    if (!error && res.statusCode == 200) {
-        // do something with JSON, using the 'body' variable
-    };
+}).on("error", (error) => {
+    console.error(error.message);
 });
 
 let data = JSON.stringify(managers);

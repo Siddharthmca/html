@@ -1,7 +1,5 @@
 'use strict';
 
-const https = require('https');
-
 const fs = require('fs');
 const express = require('express');
 const app = express();
@@ -64,82 +62,59 @@ console.log(mechanic);
 */
 //
 
-// let managers = {
-//     "managers": [
-//         {
-//             "name": "Akshaya",
-//             "email": "akshayagmail.com",
-//             "phone": "9148827639",
-//             "role": "Executive",
-//             "performance": 0.92,
-//             "salary": 20000
-//         },
-//         {
-//             "name": "Pavan",
-//             "email": "pavan@gmail.com",
-//             "phone": "9100997798",
-//             "role": "Intern",
-//             "performance": 0.65,
-//             "salary": 12000
-//         },
-//         {
-//             "name": "Ashwin",
-//             "email": "ashwin@gmail.com",
-//             "phone": "9800657341",
-//             "role": "Executive",
-//             "performance": 0.78,
-//             "salary": 23000
-//         },
-//         {
-//             "name": "Vaishnavi",
-//             "email": "vaishnavi@gmail.com",
-//             "phone": "8935667832",
-//             "role": "HR",
-//             "performance": 0.91,
-//             "salary": 21300
-//         },
-//         {
-//             "name": "Pooja",
-//             "email": "pooja@gmail.com",
-//             "phone": "91009902",
-//             "role": "Intern",
-//             "performance": 0.87,
-//             "salary": 12000
-//         },
-//         {
-//             "name": "Anisha",
-//             "email": "anisha@gmail.com",
-//             "phone": "9167990012",
-//             "role": "Intern",
-//             "performance": 0.78,
-//             "salary": 10000
-//         }
-//     ]
+let managers = {
+    "managers": [
+        {
+            "name": "Akshaya",
+            "email": "akshayagmail.com",
+            "phone": "9148827639",
+            "role": "Executive",
+            "performance": 0.92,
+            "salary": 20000
+        },
+        {
+            "name": "Pavan",
+            "email": "pavan@gmail.com",
+            "phone": "9100997798",
+            "role": "Intern",
+            "performance": 0.65,
+            "salary": 12000
+        },
+        {
+            "name": "Ashwin",
+            "email": "ashwin@gmail.com",
+            "phone": "9800657341",
+            "role": "Executive",
+            "performance": 0.78,
+            "salary": 23000
+        },
+        {
+            "name": "Vaishnavi",
+            "email": "vaishnavi@gmail.com",
+            "phone": "8935667832",
+            "role": "HR",
+            "performance": 0.91,
+            "salary": 21300
+        },
+        {
+            "name": "Pooja",
+            "email": "pooja@gmail.com",
+            "phone": "91009902",
+            "role": "Intern",
+            "performance": 0.87,
+            "salary": 12000
+        },
+        {
+            "name": "Anisha",
+            "email": "anisha@gmail.com",
+            "phone": "9167990012",
+            "role": "Intern",
+            "performance": 0.78,
+            "salary": 10000
+        }
+    ]
 
-// };
-
-let url = 'https://github.com/Joseph-k-iype/html/blob/master/lab10/myapp/database.json';
-
-var managers = https.get(url,(res) => {
-    let body = "";
-
-    res.on("data", (chunk) => {
-        body += chunk;
-    });
-
-    res.on("end", () => {
-        try {
-            let json = JSON.parse(body);
-            // do something with JSON
-        } catch (error) {
-            console.error(error.message);
-        };
-    });
-
-}).on("error", (error) => {
-    console.error(error.message);
-});
-
+};
 let data = JSON.stringify(managers);
 
 fs.writeFile('./database.json', data, (err) => {

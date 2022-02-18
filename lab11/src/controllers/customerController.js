@@ -3,13 +3,18 @@ const controller = {};
 controller.list = (req, res) => {
   req.getConnection((err, conn) => {
     conn.query('SELECT * FROM customer', (err, customers) => {
-     if (err) {
-      res.json(err);
-     }
-     res.render('customers', {
+      if (err) {
+        res.json(err);
+      }
+      var r = res.render('customers', {
         data: customers
-     });
+        //print it as json
+
+      });
+      var resultArray = Object.values(JSON.parse(JSON.stringify(customers)))
+
     });
+
   });
 };
 
@@ -40,9 +45,9 @@ controller.update = (req, res) => {
   const newCustomer = req.body;
   req.getConnection((err, conn) => {
 
-  conn.query('UPDATE customer set ? where id = ?', [newCustomer, id], (err, rows) => {
-    res.redirect('/');
-  });
+    conn.query('UPDATE customer set ? where id = ?', [newCustomer, id], (err, rows) => {
+      res.redirect('/');
+    });
   });
 };
 

@@ -1,0 +1,65 @@
+<% include partials/_header %>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-7">
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <td>Register No</td>
+            <td>Name</td>
+            <td>Class</td>
+            <td>Event</td>
+            <td>Team</td>
+            <td>Edit or Delete</td>
+
+          </tr>
+        </thead>
+        <tbody>
+          <% if (data) { %>
+            <% for(var i = 0; i < data.length; i++) { %>
+              <tr>
+                <td><%= (i + 1) %></td>
+                <td><%= data[i].s_name %></td>
+                <td><%= data[i].s_class %></td>
+                <td><%= data[i].s_event %></td>
+                <td><%= data[i].s_team %></td>
+
+                <td>
+                  <a href="/update/<%= data[i].id %>" class="btn btn-info">Edit</a>
+                  <a href="/delete/<%= data[i].id %>" class="btn btn-danger">Delete</a>
+                </td>
+              </tr>
+            <% } %>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-5">
+      <div class="card-body">
+
+        <form action="/add" method="POST">
+          <div class="form-group">
+            <input type="text" name="s_name" placeholder="Name" class="form-control" autofocus>
+          </div>
+          <div class="form-group">
+            <input type="text" name="s_class" placeholder="Class" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" name="s_event" placeholder="Event" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" name="s_team" placeholder="Team" class="form-control">
+          </div>
+
+
+          <button type="submit" class="btn btn-primary">
+            save student
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% include partials/_footer %>

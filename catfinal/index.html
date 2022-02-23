@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>web app</title>
 </head>
+
 <body>
     <main>
         <label>Name:</label>
@@ -14,8 +17,8 @@
 
         <br><br><br>
         <div>
-           <input placeholder="search by name" id="search-input">
-           <button id="search-btn">Search</button>
+            <input placeholder="search by name" id="search-input">
+            <button id="search-btn">Search</button>
         </div>
 
         <table id="table">
@@ -34,7 +37,51 @@
             <input type="text" id="update-name-input">
             <button id="update-row-btn">Update</button>
         </section>
+
+        <div ng-app="myApp" ng-controller="myController">
+
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Bird Name</th>
+                    <th>Type of Bird</th>
+                </tr>
+
+                <tr ng-repeat="birds in list">
+                    <td>{{birds.id}}</td>
+                    <td>{{birds.name}}</td>
+                    <td>{{birds.date_added}}</td>
+                </tr>
+            </table>
+        </div>
+
     </main>
+
     <script src="app.js"></script>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myController',
+            function ($scope, $http) {
+
+                var request = {
+                    method: 'get',
+                    url: 'http://localhost:3000/getAll',
+                    dataType: 'json',
+                    contentType: "application/json"
+                };
+
+                $scope.data = new Array;
+
+                $http(request)
+                    .success(function (jsonData) {
+                        $scope.data = jsonData;
+                        $scope.list = $scope.data;
+                    })
+                    .error(function () {
+
+                    });
+            });
+    </script>
 </body>
+
 </html>
